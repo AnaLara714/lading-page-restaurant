@@ -10,7 +10,7 @@ import iconInstagram from "assets/icon/instagram.svg";
 export const Footer: React.FC = () => {
   return(
     <FooterDiv>
-      <div>
+      <div className="information">
         <div>
           <img src={Logo} className="logo"/>
           <TextDescription> 
@@ -39,18 +39,20 @@ export const Footer: React.FC = () => {
           <li><a href="#">Loacalização</a></li>
         </ItemsNav>
       </nav>
-      <div>
+      <div className="socialNetworking">
         <Typography>Nossas Redes Sociais</Typography>
-        <img src={iconFacebook} className="iconGithub"/>
-        <img src={iconInstagram} className="iconGithub"/>
+        <div>
+          <img src={iconFacebook} className="iconGithub"/>
+          <img src={iconInstagram} className="iconGithub"/>
+        </div>
       </div>
       <Typography className="reservedRights">
         @2023 - Todos os direitos reservados
       </Typography>
-        <Typography className="reservedRights">
+      <Typography className="reservedRights">
           Desenvolvido por: @AnaLara714 <img src={iconGithub} className="iconsReservedRights"/> 
           | Projetado por: Isaac <img src={iconFigma} className="iconsReservedRights"/>
-        </Typography> 
+      </Typography> 
     </FooterDiv>
   );
 };

@@ -22,6 +22,10 @@ export const FooterDiv = styled('div')({
     height: 33,
     marginLeft: 5,
     marginRight: 5,
+    "@media (max-width: 500px)": {
+      width: 22,
+      height: 22,
+    },
   },
   "& .openHours": {
     color: "#E0EBFE",
@@ -33,10 +37,21 @@ export const FooterDiv = styled('div')({
     marginTop: 15,
     lineHeight: "29px",
     width: "70%",
+    "@media (max-width: 500px)": {
+      width: "92%",
+      marginTop: 0,
+    },
   },
   "& .days": {
     display: "flex",
     flexDirection: "column",
+  },
+  "& .information": {
+    "@media (max-width: 500px)": {
+      display: "flex",
+      flexWrap: "wrap",
+      marginLeft: "5%",
+    },
   },
   "& .reservedRights": {
     display: "flex",
@@ -45,10 +60,24 @@ export const FooterDiv = styled('div')({
     alignItems: "center",
     fontWeight: 700,
     padding: 10,
+    "@media (max-width: 500px)": {
+      justifyContent: "space-between",
+      fontSize: 12,
+    },
   },
   "& .space-footer": {
-    marginLeft: "15%",
+    marginLeft: "18%",
     marginRight: "18%",
+    "@media (max-width: 1140px)": {
+      marginLeft: "0%",
+      marginRight: "10%",
+    },
+  },
+  "& .socialNetworking" : {
+    display: "flex",
+    justifyContent: "flex-start",
+    flexDirection: "column",
+    marginBottom: 106,
   },
 });
 export const TextDescription = styled(Typography)({
@@ -59,16 +88,21 @@ export const TextDescription = styled(Typography)({
   marginTop: 21,
   color: "#E4EEFF",
   lineHeight: "29px",
+  "@media (max-width: 500px)": {
+    width: 240,
+    marginBottom: 45,
+  },
 });
 export const Emphasis = styled(Typography)({
   fontWeight: 700,
   fontSize: 12,
-  color: "#E3EDFF",
+  color: "#FFFFFF",
   lineHeight: "40px",
 });
 export const ItemsNav = styled('ul')({
   display: "flex",
   flexDirection: "column",
+  padding: 0,
   "& li": {
     listStyle: "none",
     lineHeight: "40px",
@@ -76,5 +110,8 @@ export const ItemsNav = styled('ul')({
   "& a": {
     color: "#E4EEFF",
     textDecoration: "none",
+  },
+  "@media (max-width: 500px)": {
+    justifyContent: "flex-start",
   },
 });

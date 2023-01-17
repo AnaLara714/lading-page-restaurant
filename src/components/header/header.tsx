@@ -1,5 +1,6 @@
 import React from "react";
-import { ButtonOrderNow, HeaderDiv, ItemsNav } from "./header.style";
+import { HeaderDiv, ItemsNav } from "./header.style";
+import { ButtonOrderNow } from "components/ButtonOrderNow";
 import Logo from "assets/img/logo.png";
 
 
@@ -15,7 +16,7 @@ export const Header: React.FC = () => {
             <li><a href="#">Contato</a></li>
           </ItemsNav>
         </nav>
-        <ButtonOrderNow>Peça agora</ButtonOrderNow> 
+        <ButtonOrderNow/>
       </HeaderDiv>
     
   );

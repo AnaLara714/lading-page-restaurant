@@ -14,6 +14,21 @@ export const HeaderDiv = styled('div')({
     width: 198,
     marginTop: 56,
     marginRight: "15%",
+    "@media (max-width: 500px)": {
+      marginRight: 0,
+      marginTop: 26,
+      width: 170,
+      height: 46,
+    },
+  },
+  "& button": {
+    marginTop: 63,
+    marginLeft: "15%",
+    "@media (max-width: 500px)": {
+      marginLeft: 0,
+      width: 117,
+      height: 42,
+    },
   },
 });
 
@@ -30,17 +45,8 @@ export const ItemsNav = styled('ul')({
     color: "#FFFFFF",
     textDecoration: "none",
   },
+  "@media (max-width: 500px)": {
+    marginTop: 0,
+  },
 });
 
-export const ButtonOrderNow = styled('button')({
-  background: "#EA6D27",
-  color: "#FFFFFF",
-  width: 167,
-  boxShadow: "5px 5px 5px 1px rgba(0, 0, 0, 0.2)",
-  height: 64,
-  marginTop: 63,
-  borderRadius: "15px 3px 15px 3px",
-  border: "none",
-  fontSize: 18,
-  marginLeft: "15%",
-});
