@@ -13,6 +13,7 @@ export const Card = styled('div')({
   opacity: 0.95,
   width: 220,
   height: 230,
+  marginTop: 15,
   "& .name": {
     fontWeight: 700,
   }, 

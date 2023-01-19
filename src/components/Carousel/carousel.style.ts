@@ -1,6 +1,6 @@
 import React from "react";
-import { styled } from "@mui/system";
 import { Typography } from "@mui/material";
+import { styled } from "@mui/system";
 
 export const DivCarousel = styled('div')({
   overflow: "hidden",
@@ -19,6 +19,7 @@ export const Div = styled('div')({
     borderRadius: 3,
     width: 60,
     height: 30,
+    cursor: "pointer",
     border: "none",
     color: "#FFFFFF",
     background: "#EA6D27",

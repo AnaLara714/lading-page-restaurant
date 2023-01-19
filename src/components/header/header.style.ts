@@ -24,7 +24,7 @@ export const HeaderDiv = styled('div')({
   "& button": {
     marginTop: 63,
     marginLeft: "15%",
-    "@media (max-width: 500px)": {
+    "@media (max-width: 1160px)": {
       marginTop: 0,
       marginLeft: 0,
       width: 0,
@@ -35,6 +35,9 @@ export const HeaderDiv = styled('div')({
   
   "& .itemsHeader:hover": {
     display:"block",
+  },
+  "@media (max-width: 1100px)": {
+    marginBottom: 25,
   },
 });
 
@@ -52,8 +55,9 @@ export const ItemsNav = styled('ul')({
     textDecoration: "none",
   },
   "& li ul": {
-    left: 0,
+    left: "38%",
     display: "none",
+    position: "absolute",
   },
   "& li:hover ul, li.over ul": {
     display: "block",
@@ -64,7 +68,8 @@ export const ItemsNav = styled('ul')({
     width: 0,
   },
   "@media (max-width: 500px)": {
-    marginTop: 0,
+    marginTop: 15,
+    lineHeight: "25px",
   },
 });
 
