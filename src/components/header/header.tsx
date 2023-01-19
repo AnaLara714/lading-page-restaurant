@@ -11,8 +11,15 @@ export const Header: React.FC = () => {
         <nav>
           <ItemsNav>
             <li><a href="#">Cardápio</a></li>
-            <li><a href="#">Galeria</a></li>
+            <li>
+              <a href="#">Galeria</a>
+                <ul>
+                  <li><a href="#">Fotos</a></li>
+                  <li><a href="#">Eventos</a></li>
+                </ul>
+            </li>
             <li><a href="#">Sobre</a></li>
+            <li><a href="#">Localização</a></li>
             <li><a href="#">Contato</a></li>
           </ItemsNav>
         </nav>

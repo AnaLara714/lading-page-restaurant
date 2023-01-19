@@ -1,0 +1,1 @@
+export { ButtonLocalization } from "./buttonLocalization";

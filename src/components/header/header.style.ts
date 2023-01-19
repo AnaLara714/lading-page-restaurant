@@ -13,7 +13,7 @@ export const HeaderDiv = styled('div')({
     height: 55,
     width: 198,
     marginTop: 56,
-    marginRight: "15%",
+    marginRight: "8%",
     "@media (max-width: 500px)": {
       marginRight: 0,
       marginTop: 26,
@@ -25,10 +25,16 @@ export const HeaderDiv = styled('div')({
     marginTop: 63,
     marginLeft: "15%",
     "@media (max-width: 500px)": {
+      marginTop: 0,
       marginLeft: 0,
-      width: 117,
-      height: 42,
+      width: 0,
+      height: 0,
+      visibility: "hidden",
     },
+  },
+  
+  "& .itemsHeader:hover": {
+    display:"block",
   },
 });
 
@@ -44,6 +50,18 @@ export const ItemsNav = styled('ul')({
   "& a": {
     color: "#FFFFFF",
     textDecoration: "none",
+  },
+  "& li ul": {
+    left: 0,
+    display: "none",
+  },
+  "& li:hover ul, li.over ul": {
+    display: "block",
+    marginRight: 0,
+  },
+  "& li ul li": {
+    display: "block",
+    width: 0,
   },
   "@media (max-width: 500px)": {
     marginTop: 0,
